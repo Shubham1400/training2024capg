@@ -1,7 +1,17 @@
+/*5. Remove the duplicate elements in the given array of intergers
+ 
+i/p
+1 2 3 4 2 5 1
+ 
+o/p
+ 
+1 2 3 4 5*/
+
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
-void sort(int* a){
+void sort(int* a){    //BUBBLE SORT
     for(int i = 0;i<5;i++){
         for(int j=i+1; j<5;j++){
             if(a[i]>a[j]){
@@ -36,5 +46,5 @@ int main()
     for(int i = 0; i<size; i++){
         printf("%d",a[i]);
     }
-    return 0;
+    return EXIT_SUCCESS;
 }
