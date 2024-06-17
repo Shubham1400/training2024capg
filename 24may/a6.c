@@ -21,8 +21,8 @@ Output:
 
 void leader(int* a){
     int counter = 1;
-    for(int i = 0;i<5;i++){
-        for(int j=i+1; j<5;j++){
+    for(int i = 0;i<M;i++){
+        for(int j=i+1; j<M;j++){
             if(a[i]>a[j])
                 counter = 1;
             else{
