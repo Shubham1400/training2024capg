@@ -1,4 +1,5 @@
-#include <stdio.h>
+// 4.  Write a program to convert Binary to decimal
+include <stdio.h>
 #include <math.h>
 int main()
 {

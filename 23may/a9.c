@@ -1,3 +1,11 @@
+/*9. BMI Calculator:
+Write a program that calculates the Body Mass Index (BMI) based on user input for weight (in kg) and height (in meters). Use if statements to classify the BMI into categories:
+Below 18.5: Underweight
+18.5 to 24.9: Normal weight
+25 to 29.9: Overweight
+30 and above: Obesity
+10. Simple Calculator:
+Write a program that takes two numbers and an operator (+, -, *, /) as input and uses if statements to perform the corresponding arithmetic operation. Print the result.*/
 #include <stdio.h>
 int main()
 {

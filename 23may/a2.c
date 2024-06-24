@@ -1,3 +1,4 @@
+//To calculate Area and Circumference of a circle
 #include <stdio.h>
 #define PI 3.14 //macro
 int main()

@@ -1,10 +1,28 @@
-#include <stdio.h>
-//#include <math.h>
+/*6. Given an array of positive integers. Your task is to find the leaders in the array. An element is leader if it 
+is greater than all the elements to its right side. And the rightmost element is always a leader.
+ 
+TESTCASE 1:
+Input:
+6
+6 7 4 3 5 2
+Output:
+2 5 7
+ 
+TESTCASE 2:
+Input:
+5
+2 6 3 8 4
+Output:
+4 8*/
 
-void sort(int* a){
+#include <stdio.h>
+#include <stdlib.h>
+#define M 10
+
+void leader(int* a){
     int counter = 1;
-    for(int i = 0;i<5;i++){
-        for(int j=i+1; j<5;j++){
+    for(int i = 0;i<M;i++){
+        for(int j=i+1; j<M;j++){
             if(a[i]>a[j])
                 counter = 1;
             else{
@@ -19,8 +37,11 @@ void sort(int* a){
 
 int main()
 {
-    int a[5] = {2,6,4,9,2};
-    sort(a);
+    int a[M];
+    for(int i = 0; i<M; i++)
+        scanf("%d", &a[i]);
     
-    return 0;
+    leader(a);
+    
+    return EXIT_SUCCESS;
 }
